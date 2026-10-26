@@ -1,0 +1,46 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.checkflow/mcp",
+  "title": "CheckFlow",
+  "description": "Run checklists, complete tasks and build process templates in your CheckFlow workspace.",
+  "version": "3.0.0",
+  "websiteUrl": "https://docs.checkflow.io/docs/mcp/overview",
+  "repository": {
+    "url": "https://github.com/checkflowio/checkflow-mcp",
+    "source": "github",
+    "id": "1435000518"
+  },
+  "icons": [
+    {
+      "src": "https://checkflow.io/android-chrome-512x512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.checkflow.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-KEY",
+          "description": "CheckFlow API key for a workspace in the United States region. An Administrator creates it on the API & Integrations tab of the Team page.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://api-eu.checkflow.io/mcp",
+      "headers": [
+        {
+          "name": "X-API-KEY",
+          "description": "CheckFlow API key for a workspace in the Europe region. An Administrator creates it on the API & Integrations tab of the Team page.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
