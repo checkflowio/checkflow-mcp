@@ -24,8 +24,8 @@
       "headers": [
         {
           "name": "X-API-KEY",
-          "description": "CheckFlow API key for a workspace in the United States region. An Administrator creates it on the API & Integrations tab of the Team page.",
-          "isRequired": true,
+          "description": "Optional. Leave it out to sign in with your CheckFlow account (OAuth). Otherwise a CheckFlow API key for a workspace in the United States region, created by an Administrator on the API & Integrations tab of Team Management.",
+          "isRequired": false,
           "isSecret": true
         }
       ]
@@ -36,8 +36,8 @@
       "headers": [
         {
           "name": "X-API-KEY",
-          "description": "CheckFlow API key for a workspace in the Europe region. An Administrator creates it on the API & Integrations tab of the Team page.",
-          "isRequired": true,
+          "description": "Optional. Leave it out to sign in with your CheckFlow account (OAuth). Otherwise a CheckFlow API key for a workspace in the Europe region, created by an Administrator on the API & Integrations tab of Team Management.",
+          "isRequired": false,
           "isSecret": true
         }
       ]
